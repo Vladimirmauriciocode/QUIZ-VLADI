@@ -1,102 +1,83 @@
-/* Estilos para el menú del administrador */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b325ff;
+    background-color: #021e51;
 }
 
 header {
-    background-color: #8808b7;
-    color: #ccfe06;
-    padding: 20px;
+    background-color: #390870;
+    color: #1e3dc4;
+    padding: 10px;
     text-align: center;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    display: inline-block;
-    padding: 10px 20px;
     text-decoration: none;
-    color: #ffffff;
-    background-color: #0433aa;
-    border: 1px solid #2bff0a;
-    border-radius: 5px;
-    margin-right: 10px;
+    color: #007bff;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #5e19ff;
-    color: #333;
+    color: #0056b3;
 }
 
-/* Estilos para el submenú */
-.sub-menu {
-    display: none;
-    position: absolute;
-    background-color: #180455;
-    border: 1px solid #081606;
-    border-radius: 5px;
-    padding: 5px 0;
-    z-index: 1;
-}
-
-nav ul li:hover .sub-menu {
-    display: block;
-}
-
-.sub-menu li {
-    display: block;
-}
-
-.sub-menu li a {
-    padding: 10px 30px;
-}
-
-.sub-menu li a:hover {
-    background-color: #09ff01;
-    color: #333;
-}
-
-/* Estilos para el menú del administrador */
-nav {
-    text-align: center; /* Centra los elementos del menú */
-}
-
-nav ul {
-    display: inline-block; /* Cambia el comportamiento del elemento ul a inline-block */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li ul.sub-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%; /* Cambia la posición de la lista secundaria */
-}
-
-nav ul li:hover ul.sub-menu {
-    display: block;
-}
-
-#eliminarUsuarioForm{
-    background-color: #c70808;
+#eliminarUsuarioForm,
+#crearPreguntaForm {
+    background-color: #fff;
     padding: 20px;
-    border-radius: 20px;
-    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#eliminarUsuarioForm h2,
+#crearPreguntaForm h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#eliminarUsuarioForm label,
+#crearPreguntaForm label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#eliminarUsuarioForm input,
+#crearPreguntaForm input,
+#eliminarUsuarioForm select,
+#crearPreguntaForm select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #1c1818;
+    margin-bottom: 10px;
+}
+
+#eliminarUsuarioForm input[type="submit"],
+#crearPreguntaForm input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#eliminarUsuarioForm input[type="submit"]:hover,
+#crearPreguntaForm input[type="submit"]:hover {
+    background-color: #358ce8;
 }
